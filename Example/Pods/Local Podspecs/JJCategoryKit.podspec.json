@@ -1,9 +1,9 @@
 {
   "name": "JJCategoryKit",
-  "version": "0.1.0",
-  "summary": "A short description of JJCategoryKit.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/xuejingpeng0224@qq.com/JJCategoryKit",
+  "version": "1.0.0",
+  "summary": "存放一些常用的Category文件",
+  "description": "存放一些常用的Category文件",
+  "homepage": "https://github.com/xuejingpeng/JJCategoryKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,49 @@
     "xuejingpeng0224@qq.com": "xuejingpeng0224@qq.com"
   },
   "source": {
-    "git": "https://github.com/xuejingpeng0224@qq.com/JJCategoryKit.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/xuejingpeng/JJCategoryKit.git",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "JJCategoryKit/Classes/**/*"
+  "source_files": "JJCategoryKit/Classes/*",
+  "subspecs": [
+    {
+      "name": "NSObject",
+      "source_files": "JJCategoryKit/Classes/NSObject/*"
+    },
+    {
+      "name": "NSString",
+      "source_files": "JJCategoryKit/Classes/NSString/*"
+    },
+    {
+      "name": "ArrayDic",
+      "source_files": "JJCategoryKit/Classes/ArrayDic/*"
+    },
+    {
+      "name": "NSData",
+      "source_files": "JJCategoryKit/Classes/NSData/*"
+    },
+    {
+      "name": "UIColor",
+      "source_files": "JJCategoryKit/Classes/UIColor/*"
+    },
+    {
+      "name": "UIImage",
+      "source_files": "JJCategoryKit/Classes/UIImage/*"
+    },
+    {
+      "name": "UIView",
+      "source_files": "JJCategoryKit/Classes/UIView/*"
+    },
+    {
+      "name": "UIButton",
+      "source_files": "JJCategoryKit/Classes/UIButton/*"
+    },
+    {
+      "name": "UILabel",
+      "source_files": "JJCategoryKit/Classes/UILabel/*"
+    }
+  ]
 }

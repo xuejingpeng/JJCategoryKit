@@ -1,5 +1,23 @@
 PODS:
-  - JJCategoryKit (0.1.0)
+  - JJCategoryKit (1.0.0):
+    - JJCategoryKit/ArrayDic (= 1.0.0)
+    - JJCategoryKit/NSData (= 1.0.0)
+    - JJCategoryKit/NSObject (= 1.0.0)
+    - JJCategoryKit/NSString (= 1.0.0)
+    - JJCategoryKit/UIButton (= 1.0.0)
+    - JJCategoryKit/UIColor (= 1.0.0)
+    - JJCategoryKit/UIImage (= 1.0.0)
+    - JJCategoryKit/UILabel (= 1.0.0)
+    - JJCategoryKit/UIView (= 1.0.0)
+  - JJCategoryKit/ArrayDic (1.0.0)
+  - JJCategoryKit/NSData (1.0.0)
+  - JJCategoryKit/NSObject (1.0.0)
+  - JJCategoryKit/NSString (1.0.0)
+  - JJCategoryKit/UIButton (1.0.0)
+  - JJCategoryKit/UIColor (1.0.0)
+  - JJCategoryKit/UIImage (1.0.0)
+  - JJCategoryKit/UILabel (1.0.0)
+  - JJCategoryKit/UIView (1.0.0)
 
 DEPENDENCIES:
   - JJCategoryKit (from `../`)
@@ -9,7 +27,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JJCategoryKit: 46199c1443626f87ef034b1129a5f44902c23bfe
+  JJCategoryKit: 9b3d0786224fa43baa9b2d3e576d58f5a0d259f6
 
 PODFILE CHECKSUM: 51917ace164e18f5ca5f86facc84a3c8dd7f7ab4
 

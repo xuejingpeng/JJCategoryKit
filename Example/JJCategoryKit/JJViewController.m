@@ -7,8 +7,10 @@
 //
 
 #import "JJViewController.h"
+#import <UIButton+Category.h>
 
 @interface JJViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *icon;
 
 @end
 
@@ -17,9 +19,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.icon.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(onclickImg)];
+    [self.icon addGestureRecognizer:tap];
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(20, 100, 200, 100)];
+    [btn setTitle:@"测试按钮" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn addCallBackAction:^(UIButton *button) {
+        NSLog(@">>>");
+    }];
+    [self.view addSubview:btn];
 }
 
+-(void)onclickImg{
+
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

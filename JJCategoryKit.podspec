@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JJCategoryKit'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = '存放一些常用的Category文件'
 
 # This description is used to generate tags and improve search results.
@@ -27,8 +27,34 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'JJCategoryKit/Classes/**/*'
+  s.source_files = 'JJCategoryKit/Classes/*'
+  s.subspec 'NSObject' do |ss|
+      ss.source_files = 'JJCategoryKit/Classes/NSObject/*'
+  end
+  s.subspec 'NSString' do |ss|
+      ss.source_files = 'JJCategoryKit/Classes/NSString/*'
+  end
+  s.subspec 'ArrayDic' do |ss|
+      ss.source_files = 'JJCategoryKit/Classes/ArrayDic/*'
+  end
+  s.subspec 'NSData' do |ss|
+      ss.source_files = 'JJCategoryKit/Classes/NSData/*'
+  end
+  s.subspec 'UIColor' do |ss|
+      ss.source_files = 'JJCategoryKit/Classes/UIColor/*'
+  end
+  s.subspec 'UIImage' do |ss|
+      ss.source_files = 'JJCategoryKit/Classes/UIImage/*'
+  end
+  s.subspec 'UIView' do |ss|
+      ss.source_files = 'JJCategoryKit/Classes/UIView/*'
+  end
+  s.subspec 'UIButton' do |ss|
+      ss.source_files = 'JJCategoryKit/Classes/UIButton/*'
+  end
+  s.subspec 'UILabel' do |ss|
+      ss.source_files = 'JJCategoryKit/Classes/UILabel/*'
+  end
   
   # s.resource_bundles = {
   #   'JJCategoryKit' => ['JJCategoryKit/Assets/*.png']
