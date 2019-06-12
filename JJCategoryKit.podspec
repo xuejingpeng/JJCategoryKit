@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JJCategoryKit'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = '存放一些常用的Category文件'
 
 # This description is used to generate tags and improve search results.
@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.public_header_files = 'JJCategoryKit/Classes/JJCategory.h'
   s.source_files = 'JJCategoryKit/Classes/*'
   s.subspec 'NSObject' do |ss|
       ss.source_files = 'JJCategoryKit/Classes/NSObject/*'
@@ -59,8 +60,6 @@ Pod::Spec.new do |s|
   # s.resource_bundles = {
   #   'JJCategoryKit' => ['JJCategoryKit/Assets/*.png']
   # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

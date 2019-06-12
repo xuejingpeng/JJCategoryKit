@@ -1,16 +1,13 @@
-#ifdef __OBJC__
-#import <UIKit/UIKit.h>
-#else
-#ifndef FOUNDATION_EXPORT
-#if defined(__cplusplus)
-#define FOUNDATION_EXPORT extern "C"
-#else
-#define FOUNDATION_EXPORT extern
-#endif
-#endif
-#endif
+//
+//  JJCategory.h
+//  Pods
+//
+//  Created by 薛静鹏 on 2019/6/12.
+//
 
-#import "JJCategory.h"
+#ifndef JJCategory_h
+#define JJCategory_h
+
 #import "NSArray+Category.h"
 #import "NSArray+Safe.h"
 #import "NSDictionary+Category.h"
@@ -34,6 +31,4 @@
 #import "UIView+Category.h"
 #import "UIView+Frame.h"
 
-FOUNDATION_EXPORT double JJCategoryKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char JJCategoryKitVersionString[];
-
+#endif /* JJCategory_h */

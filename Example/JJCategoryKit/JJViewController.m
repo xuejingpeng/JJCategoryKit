@@ -7,7 +7,7 @@
 //
 
 #import "JJViewController.h"
-#import <UIButton+Category.h>
+#import <JJCategoryKit/JJCategory.h>
 
 @interface JJViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *icon;
